@@ -98,13 +98,13 @@ function getSvgDataUri(code: string, dec: Decoration) {
     let svg = `
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 ${width} ${dec.fontSize}" 
+        viewBox="0 0 ${width} ${dec.fontSize + 3}" 
         height="${dec.fontSize}" 
         width="${width}"
     >
         <rect
             width="${width}" 
-            height="${dec.fontSize}" 
+            height="${dec.fontSize + 3}" 
             rx="2"
             ry="2"
             style="fill: ${dec.bgColor};"
