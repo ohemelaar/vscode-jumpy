@@ -57,7 +57,7 @@ export function getLines(editor: vscode.TextEditor): { firstLineNumber: number; 
 
 export function createTextEditorDecorationType(dec: Decoration) {
     const width = dec.fontSize + 6;
-    const left = -width + 2;
+    const left = -width;
 
     return vscode.window.createTextEditorDecorationType({
         after: {
