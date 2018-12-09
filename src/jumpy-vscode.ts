@@ -123,7 +123,7 @@ function getSvgDataUri(code: string, dec: Decoration) {
         </text>
     </svg>
     `;
-    svg = svg.replace(/(\r\n\t|\n|\r\t)/gm, "");
+    svg = svg.replace(/(\r\n\t|\n|\r\t)/gm, '');
 
     return vscode.Uri.parse(`data:image/svg+xml;utf8,${svg}`);
 }

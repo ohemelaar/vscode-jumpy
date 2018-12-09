@@ -68,8 +68,7 @@ export function activate(context: vscode.ExtensionContext) {
         positions = jumpyFn(codeArray.length, getLinesResult.firstLineNumber, getLinesResult.lines, regexp);
 
         const decorationsOffset2 = positions
-            .map(
-                (position, i) =>
+            .map((position, i) =>
                     position.charOffset == 1
                         ? null
                         : createDecorationOptions(
@@ -83,8 +82,7 @@ export function activate(context: vscode.ExtensionContext) {
             .filter(x => !!x);
 
         const decorationsOffset1 = positions
-            .map(
-                (position, i) =>
+            .map((position, i) =>
                     position.charOffset == 2
                         ? null
                         : createDecorationOptions(
